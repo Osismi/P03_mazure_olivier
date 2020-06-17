@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     display: block;
+
 }
 
 .header {
@@ -13,13 +14,33 @@ body {
 
 main {
     display: block;
+
 }
 
 nav {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding-left: 3em;
+    padding-right: 3em;
 }
+section {
+    display: flex;
+    flex-direction: row;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+img {
+    width: 65%;
+    height: 100%;
+    filter: drop-shadow(0 0 0.75em gainsboro);
+}
+
 
 .prochainement {
     background-color: hsl(167, 30%, 60%);
@@ -28,6 +49,10 @@ nav {
     align-items: center;
     justify-content: center;
     margin: auto;
+    height: 70px;
+    border-radius: 15px;
+    margin-top: 3em;
+    margin-bottom: 5em;
 }
 
 .footer {
@@ -36,4 +61,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    bottom: 0;
+    position: fixed;
+    height: 40px;
 }
+
