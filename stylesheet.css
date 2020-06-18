@@ -66,3 +66,7 @@ img {
     height: 40px;
 }
 
+@media screen and (max-width: 768px)
+{
+    section {flex-direction: column;}
+}
