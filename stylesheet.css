@@ -25,8 +25,6 @@
 
 body {
     margin: 0px;
-    display: block;
-
 }
 
 header {
@@ -62,24 +60,61 @@ section {
     display: flex;
     flex-direction: row;
 }
-.menu {
-    display: flex;
-    align-items: center;
-    padding-top: 3em;
-}
 .menu-row > :first-child {
-    justify-content: flex-end;
+    justify-content: center;
 }
 .menu-row > :last-child {
-    justify-content: flex-start;
+    justify-content: center;
 }
-img {
-    width: 60%;
-    height: 90%;
-    filter: drop-shadow(0 0 0.75em gainsboro);
+.menu {
+    background-color: rosybrown;
+    height: 40em;
+    width: 20em;
+    margin: 3em;
+    margin-top: 7em;
     padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: drop-shadow(0 0 1.5em gainsboro);
 }
 
+.note {
+    background-color: hsl(5, 75%, 92%);
+}
+.chic {
+    background-color: hsl(325, 98%, 97%);
+}
+.chic h2{
+    background: linear-gradient(to bottom right, rgb(212, 94, 48), rgb(141, 5, 168));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.chic h3 {
+    color: rgb(212, 94, 48);
+}
+.delice {
+    background-color: hsl(160, 0%, 96%);
+}
+.delice h2 {
+    background: linear-gradient(to bottom right, blue, rgb(21, 181, 192));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.delice h3 {
+    color: rgb(0, 81, 255);
+}
+.palette {
+    background-color: #fff;
+}
+.palette h2 {
+    background: linear-gradient(to bottom right, rgba(4, 95, 4, 0.733), rgb(115, 248, 115));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.palette h3 {
+    color: rgb(72, 199, 72);
+}
 
 .soon {
     background-color: hsl(167, 30%, 50%);
@@ -120,12 +155,17 @@ img {
 }
 
 
+@media screen and (max-width: 1100px)
+{
+    section {flex-direction: column;}
+    .menu {width: 20em; height: 40em;}
+}
 @media screen and (max-width: 768px)
 {
     section {flex-direction: column;}
     .menu-row > :first-child {justify-content: center;}
     .menu-row > :last-child {justify-content: center;}
-    img {padding: 0px;}
+    .menu {width: 15em; height: 30em;}
     .soon {width: 45%;}
     .footer > a {font-size: 1.5em;}
 }
@@ -133,6 +173,7 @@ img {
 {
     header {height: 7em;}
     h1 > a {font-size: 1.5em;}
+    .menu {width: 9em; height: 18em; margin: 0; margin-top: 6em;}
     .soon {width: 45%; height: 3em; margin-bottom: 6em;}
     .soon > a {font-size: 1.1em;}
     .footer {height: 4em;}
@@ -142,6 +183,7 @@ img {
 {
     header {height: 6em;}
     h1 > a {font-size: 1.1em;}
+    .menu {width: 6em; height: 12em; margin: 0; margin-top: 4em;}
     .soon {width: 45%; height: 3em; margin-bottom: 5em;}
     .soon > a {font-size: 0.9em;}
     .footer {height: 3em;}
