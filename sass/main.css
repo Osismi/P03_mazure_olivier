@@ -1,0 +1,419 @@
+body {
+  margin: 0px;
+}
+
+main {
+  display: block;
+}
+
+@media screen and (max-width: 1100px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu {
+    width: 12.5em;
+    height: 25em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-row > :first-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu-row > :last-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu {
+    width: 10em;
+    height: 20em;
+  }
+  .soon {
+    width: 45%;
+  }
+  .footer > a {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  header {
+    height: 7em;
+  }
+  h1 > a {
+    font-size: 1.5em;
+  }
+  .menu {
+    width: 9em;
+    height: 18em;
+    margin: 0;
+    margin-top: 6em;
+  }
+  .soon {
+    width: 45%;
+    height: 3em;
+    margin-bottom: 6em;
+  }
+  .soon > a {
+    font-size: 1.1em;
+  }
+  .footer {
+    height: 4em;
+  }
+  .footer > a {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  header {
+    height: 6em;
+  }
+  h1 > a {
+    font-size: 1.1em;
+  }
+  .menu {
+    width: 6em;
+    height: 12em;
+    margin: 0;
+    margin-top: 4em;
+  }
+  .soon {
+    width: 45%;
+    height: 3em;
+    margin-bottom: 5em;
+  }
+  .soon > a {
+    font-size: 0.9em;
+  }
+  .footer {
+    height: 3em;
+  }
+  .footer > a {
+    font-size: 0.9em;
+  }
+}
+
+@font-face {
+  font-family: 'aganregular';
+  src: url("font/agane_55_roman-webfont.eot");
+  src: url("font/agane_55_roman-webfont.eot?#iefix") format("embedded-opentype"), url("font/agane_55_roman-webfont.woff2") format("woff2"), url("font/agane_55_roman-webfont.woff") format("woff"), url("font/agane_55_roman-webfont.ttf") format("truetype"), url("font/agane_55_roman-webfont.svg#aganregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'aganextra_bold';
+  src: url("font/agane_75_extra_bold-webfont.eot");
+  src: url("font/agane_75_extra_bold-webfont.eot?#iefix") format("embedded-opentype"), url("font/agane_75_extra_bold-webfont.woff2") format("woff2"), url("font/agane_75_extra_bold-webfont.woff") format("woff"), url("font/agane_75_extra_bold-webfont.ttf") format("truetype"), url("font/agane_75_extra_bold-webfont.svg#aganextra_bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Devonshire';
+  src: url("font/Devonshire-Regular.eot");
+  src: url("font/Devonshire-Regular.eot?#iefix") format("embedded-opentype"), url("font/Devonshire-Regular.woff2") format("woff2"), url("font/Devonshire-Regular.woff") format("woff"), url("font/Devonshire-Regular.ttf") format("truetype"), url("font/Devonshire-Regular.svg#Devonshire-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Itim';
+  src: url("Itim-Regular.eot");
+  src: url("font/Itim-Regular.eot?#iefix") format("embedded-opentype"), url("font/Itim-Regular.woff2") format("woff2"), url("font/Itim-Regular.woff") format("woff"), url("font/Itim-Regular.ttf") format("truetype"), url("font/Itim-Regular.svg#Itim-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Croissant One';
+  src: url("font/CroissantOne-Regular.eot");
+  src: url("font/CroissantOne-Regular.eot?#iefix") format("embedded-opentype"), url("font/CroissantOne-Regular.woff2") format("woff2"), url("font/CroissantOne-Regular.woff") format("woff"), url("font/CroissantOne-Regular.ttf") format("truetype"), url("font/CroissantOne-Regular.svg#CroissantOne-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nanum Pen';
+  src: url("font/NanumPen.eot");
+  src: url("font/NanumPen.eot?#iefix") format("embedded-opentype"), url("font/NanumPen.woff2") format("woff2"), url("font/NanumPen.woff") format("woff"), url("font/NanumPen.ttf") format("truetype"), url("font/NanumPen.svg#NanumPen") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url("font/DancingScript.eot");
+  src: url("font/DancingScript.eot?#iefix") format("embedded-opentype"), url("font/DancingScript.woff2") format("woff2"), url("font/DancingScript.woff") format("woff"), url("font/DancingScript.ttf") format("truetype"), url("font/DancingScript.svg#DancingScript") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kaushan Script';
+  src: url("font/KaushanScript-Regular.eot");
+  src: url("font/KaushanScript-Regular.eot?#iefix") format("embedded-opentype"), url("font/KaushanScript-Regular.woff2") format("woff2"), url("font/KaushanScript-Regular.woff") format("woff"), url("font/KaushanScript-Regular.ttf") format("truetype"), url("font/KaushanScript-Regular.svg#KaushanScript-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+header {
+  background-color: #59a695;
+  width: 100%;
+  height: 9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 > a {
+  color: #fdcb46;
+  font-size: 2em;
+  font-family: 'aganextra_bold', Arial, serif;
+  text-decoration: none;
+  letter-spacing: -3px;
+}
+
+.footer {
+  background-color: #59a695;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  position: fixed;
+  height: 5em;
+}
+
+.footer > a {
+  color: #fdcb46;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: 'aganregular', Arial, serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu-row > :first-child {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-row > :last-child {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu {
+  height: 40em;
+  width: 20em;
+  margin: 3em;
+  margin-top: 7em;
+  padding: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-filter: drop-shadow(0 0 1.5em gainsboro);
+          filter: drop-shadow(0 0 1.5em gainsboro);
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 2.5em;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+/* ---------------------------------- Menu Note ----------------------------------- */
+.note {
+  background-color: #fadedb;
+}
+
+i {
+  background: -webkit-gradient(linear, left top, right top, from(#f35757), to(#f78f6a));
+  background: linear-gradient(to right, #f35757, #f78f6a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.note h2 {
+  font-family: 'Devonshire', cursive;
+  letter-spacing: 1px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  font-weight: 100;
+}
+
+.note h3 {
+  font-family: 'Itim';
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 200;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+/* ---------------------------------- Menu Chic ----------------------------------- */
+.chic {
+  background-color: #fff0f9;
+}
+
+.chic h2 {
+  background: -webkit-gradient(linear, left top, right top, from(#f18154), to(#af54c2));
+  background: linear-gradient(to right, #f18154, #af54c2);
+  background-clip: text;
+  font-size: 1.5em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Croissant One';
+  font-weight: 100;
+}
+
+.chic h3 {
+  color: #d17d5b;
+}
+
+/* ---------------------------------- Menu Delice ----------------------------------- */
+.delice {
+  background-color: whitesmoke;
+}
+
+.delice h2 {
+  background: -webkit-gradient(linear, left top, right top, from(blue), to(#15b5c0));
+  background: linear-gradient(to right, blue, #15b5c0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Dancing Script';
+  font-style: italic;
+  font-size: 2em;
+  font-weight: 100;
+}
+
+.delice h3 {
+  color: #4e82f1;
+  font-family: 'Nanum Pen';
+  font-style: italic;
+  font-weight: 100;
+}
+
+/* ---------------------------------- Menu Palette ----------------------------------- */
+.palette {
+  background-color: #fff;
+}
+
+.palette h2 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 95, 4, 0.733)), to(#88c063));
+  background: linear-gradient(to right, rgba(4, 95, 4, 0.733), #88c063);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Kaushan Script';
+  font-style: italic;
+}
+
+.palette h3 {
+  color: #6db46d;
+  font-family: 'Nanum Pen';
+  font-style: italic;
+  font-weight: 100;
+}
+
+.soon {
+  background-color: #59a695;
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  height: 70px;
+  border-radius: 15px;
+  margin-top: 3em;
+  margin-bottom: 8em;
+}
+
+.soon > a {
+  color: #fdcb46;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: 'aganregular', Arial, serif;
+}
+/*# sourceMappingURL=main.css.map */

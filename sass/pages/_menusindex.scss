@@ -1,0 +1,102 @@
+.menu {
+    height: 40em;
+    width: 20em;
+    margin: 3em;
+    margin-top: 7em;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include shadow;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 2.5em;
+    margin-block-start: 0;
+}
+
+/* ---------------------------------- Menu Note ----------------------------------- */
+
+.note {
+    background-color: $background-note;
+}
+i {
+    background:linear-gradient(to right, rgb(243, 87, 87), rgb(247, 143, 106));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.note h2 {
+    font-family: 'Devonshire', cursive;
+    letter-spacing: 1px;
+    margin-block-start: 0;
+    font-weight: 100;
+}
+.note h3 {
+    font-family: 'Itim';
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 200;
+    margin-block-start: 0;
+}
+/* ---------------------------------- Menu Chic ----------------------------------- */
+
+.chic {
+    background-color: hsl(325, 98%, 97%);
+}
+.chic h2 {
+    background: linear-gradient(to right, rgb(241, 129, 84), rgb(175, 84, 194));
+    background-clip: text;
+    font-size: 1.5em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Croissant One';
+    font-weight: 100;
+}
+.chic h3 {
+    color: rgb(209, 125, 91);
+}
+/* ---------------------------------- Menu Delice ----------------------------------- */
+
+.delice {
+    background-color: $background-delice;
+}
+.delice h2 {
+    background: linear-gradient(to right, blue, rgb(21, 181, 192));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Dancing Script';
+    font-style: italic;
+    font-size: 2em;
+    font-weight: 100;
+}
+.delice h3 {
+    color: rgb(78, 130, 241);
+    font-family: 'Nanum Pen';
+    font-style: italic;
+    font-weight: 100;
+}
+
+/* ---------------------------------- Menu Palette ----------------------------------- */
+
+.palette {
+    background-color: $background-palette;
+}
+.palette h2 {
+    background: linear-gradient(to right, rgba(4, 95, 4, 0.733), rgb(136, 192, 99));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Kaushan Script';
+    font-style: italic;
+}
+.palette h3 {
+    color: rgb(109, 180, 109);
+    font-family: 'Nanum Pen';
+    font-style: italic;
+    font-weight: 100;
+}
