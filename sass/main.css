@@ -6,106 +6,6 @@ main {
   display: block;
 }
 
-@media screen and (max-width: 1100px) {
-  section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .menu {
-    width: 12.5em;
-    height: 25em;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .menu-row > :first-child {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .menu-row > :last-child {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .menu {
-    width: 10em;
-    height: 20em;
-  }
-  .soon {
-    width: 45%;
-  }
-  .footer > a {
-    font-size: 1.5em;
-  }
-}
-
-@media screen and (max-width: 670px) {
-  header {
-    height: 7em;
-  }
-  h1 > a {
-    font-size: 1.5em;
-  }
-  .menu {
-    width: 9em;
-    height: 18em;
-    margin: 0;
-    margin-top: 6em;
-  }
-  .soon {
-    width: 45%;
-    height: 3em;
-    margin-bottom: 6em;
-  }
-  .soon > a {
-    font-size: 1.1em;
-  }
-  .footer {
-    height: 4em;
-  }
-  .footer > a {
-    font-size: 1.1em;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  header {
-    height: 6em;
-  }
-  h1 > a {
-    font-size: 1.1em;
-  }
-  .menu {
-    width: 6em;
-    height: 12em;
-    margin: 0;
-    margin-top: 4em;
-  }
-  .soon {
-    width: 45%;
-    height: 3em;
-    margin-bottom: 5em;
-  }
-  .soon > a {
-    font-size: 0.9em;
-  }
-  .footer {
-    height: 3em;
-  }
-  .footer > a {
-    font-size: 0.9em;
-  }
-}
-
 @font-face {
   font-family: 'aganregular';
   src: url("font/agane_55_roman-webfont.eot");
@@ -225,6 +125,27 @@ h1 > a {
   font-family: 'aganregular', Arial, serif;
 }
 
+main h2 {
+  text-align: center;
+}
+
+.carte {
+  display: block;
+  height: 75em;
+  max-width: 880px;
+  margin: auto;
+  padding: 4em;
+}
+
+.carte > h3 {
+  text-transform: none;
+  text-align: center;
+}
+
+.carte i {
+  text-align: center;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,6 +215,12 @@ h3 {
           margin-block-start: 0;
 }
 
+a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
 /* ---------------------------------- Menu Note ----------------------------------- */
 .note {
   background-color: #fadedb;
@@ -323,6 +250,10 @@ i {
   font-weight: 200;
   -webkit-margin-before: 0;
           margin-block-start: 0;
+}
+
+h3 > a:link {
+  text-decoration: none;
 }
 
 /* ---------------------------------- Menu Chic ----------------------------------- */
@@ -415,5 +346,105 @@ i {
   text-decoration: none;
   font-size: 2em;
   font-family: 'aganregular', Arial, serif;
+}
+
+@media screen and (max-width: 1100px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu {
+    width: 12.5em;
+    height: 25em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-row > :first-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu-row > :last-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu {
+    width: 10em;
+    height: 20em;
+  }
+  .soon {
+    width: 45%;
+  }
+  .footer > a {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  header {
+    height: 7em;
+  }
+  h1 > a {
+    font-size: 1.5em;
+  }
+  .menu {
+    width: 9em;
+    height: 18em;
+    margin: 0;
+    margin-top: 6em;
+  }
+  .soon {
+    width: 45%;
+    height: 3em;
+    margin-bottom: 6em;
+  }
+  .soon > a {
+    font-size: 1.1em;
+  }
+  .footer {
+    height: 4em;
+  }
+  .footer > a {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  header {
+    height: 6em;
+  }
+  h1 > a {
+    font-size: 1.1em;
+  }
+  .menu {
+    width: 6em;
+    height: 12em;
+    margin: 0;
+    margin-top: 4em;
+  }
+  .soon {
+    width: 45%;
+    height: 3em;
+    margin-bottom: 5em;
+  }
+  .soon > a {
+    font-size: 0.9em;
+  }
+  .footer {
+    height: 3em;
+  }
+  .footer > a {
+    font-size: 0.9em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

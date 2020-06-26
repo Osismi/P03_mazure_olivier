@@ -16,6 +16,12 @@ h3 {
     font-size: 2.5em;
     margin-block-start: 0;
 }
+a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* ---------------------------------- Menu Note ----------------------------------- */
 
@@ -41,6 +47,9 @@ i {
     font-size: 2.5em;
     font-weight: 200;
     margin-block-start: 0;
+}
+h3 > a:link {
+    text-decoration: none;
 }
 /* ---------------------------------- Menu Chic ----------------------------------- */
 

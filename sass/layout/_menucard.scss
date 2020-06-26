@@ -1,0 +1,18 @@
+main h2 {
+    text-align: center;
+}
+
+.carte {
+    display: block;
+    height: 75em;
+    max-width: 880px;
+    margin: auto;
+    padding: 4em;
+}
+.carte > h3 {
+    text-transform: none;
+    text-align: center;
+}
+.carte i {
+    text-align: center;;
+}
