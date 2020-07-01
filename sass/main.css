@@ -129,21 +129,55 @@ main h2 {
   text-align: center;
 }
 
-.carte {
-  display: block;
-  height: 75em;
-  max-width: 880px;
-  margin: auto;
-  padding: 4em;
+.cardtitle h2 {
+  font-size: 3em;
+  margin-top: 1.5em;
+  font-family: 'aganextra_bold', Arial, serif;
 }
 
-.carte > h3 {
+.carte {
+  display: block;
+  height: 70em;
+  max-width: 880px;
+  margin: auto;
+  padding: 5em;
+  margin-bottom: 10em;
+  -webkit-filter: drop-shadow(0 0 1.5em gainsboro);
+          filter: drop-shadow(0 0 1.5em gainsboro);
+}
+
+.carte h2 {
+  font-size: 3em;
+}
+
+.note > h4 {
   text-transform: none;
   text-align: center;
+  margin-bottom: 0px;
+  font-family: 'Itim';
+  font-style: italic;
+  font-size: 2em;
 }
 
 .carte i {
   text-align: center;
+  margin-right: 10px;
+}
+
+table {
+  width: 100%;
+  font-size: 1.5em;
+  padding-bottom: 2em;
+}
+
+td {
+  padding-top: 0.7em;
+}
+
+/* ---------------------------------- Menu Note ----------------------------------- */
+.note table {
+  font-family: 'Itim';
+  font-style: italic;
 }
 
 nav {
@@ -291,6 +325,7 @@ h3 > a:link {
   font-style: italic;
   font-size: 2em;
   font-weight: 100;
+  padding-left: 2px;
 }
 
 .delice h3 {
@@ -313,6 +348,7 @@ h3 > a:link {
   -webkit-text-fill-color: transparent;
   font-family: 'Kaushan Script';
   font-style: italic;
+  padding-right: 7px;
 }
 
 .palette h3 {
