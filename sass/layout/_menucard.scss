@@ -105,7 +105,7 @@ td {
 }
 @media screen and (max-width: 670px)
 {
-    .cardtitle {font-size: 2.3em;}
+    .cardtitle h2 {font-size: 1.3em;}
     .carte {width: 20em; padding: 2em;}
     .carte h2 {font-size: 2.5em;}
     .note h4 {font-size: 1.5em;}
@@ -113,7 +113,7 @@ td {
 }
 @media screen and (max-width: 410px)
 {
-    .cardtitle h2 {font-size: 2em; margin-top: 1em;}
+    .cardtitle h2 {margin-top: 1em;}
     .carte {width: 17em; padding: 1em; margin-bottom: 7em;}
     .carte h2 {font-size: 2em;}
     .note h4 {font-size: 1.3em;}
