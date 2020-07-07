@@ -9,7 +9,6 @@ main h2 {
 }
 .carte {
     display: block;
-    height: 70em;
     max-width: 880px;
     margin: auto;
     padding: 5em;
@@ -19,13 +18,20 @@ main h2 {
 .carte h2 {
     font-size: 3em;
 }
-.note > h4 {
-    text-transform: none;
-    text-align: center;
-    margin-bottom: 0px; 
-    font-family: 'Itim';
-    font-style: italic;
-    font-size: 2em;
+
+h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h4 > img {
+    width: 30%;
+    height: 1em;
+}
+
+.separator-reverse {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .carte i {
@@ -40,12 +46,77 @@ table {
 }
 
 td {
-    padding-top: 0.7em;
+    padding-top: 0.9em;
 }
+/* ---------------------------------- Animations ----------------------------------- */
+.inter {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+}
+.inter:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(15, 15, 15);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  .inter:hover:before { 
+    width: 100%; 
+    visibility: visible;
+  }
 
 /* ---------------------------------- Menu Note ----------------------------------- */
 
 .note table {
     font-family: 'Itim';
     font-style: italic;
+}
+
+.note > h4 {
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 0px; 
+    font-family: 'Itim';
+    font-style: italic;
+    font-size: 2em;
+}
+
+.endtitle {
+    text-align: center;
+    font-size: 2.4em;
+    font-family: 'Devonshire', cursive;
+    font-weight: 100;
+}
+
+/* ---------------------------------- Responsive ----------------------------------- */
+@media screen and (max-width: 1100px)
+{
+    .carte {width: 50em;}
+}
+@media screen and (max-width: 768px)
+{
+    .carte {width: 32em; padding: 4em;}
+    table {font-size: 1.1em;}
+}
+@media screen and (max-width: 670px)
+{
+    .cardtitle {font-size: 2.3em;}
+    .carte {width: 20em; padding: 2em;}
+    .carte h2 {font-size: 2.5em;}
+    .note h4 {font-size: 1.5em;}
+    .endtitle {font-size: 2em;}
+}
+@media screen and (max-width: 410px)
+{
+    .cardtitle h2 {font-size: 2em; margin-top: 1em;}
+    .carte {width: 17em; padding: 1em; margin-bottom: 7em;}
+    .carte h2 {font-size: 2em;}
+    .note h4 {font-size: 1.3em;}
+    .endtitle {font-size: 1.8em;}
+    table {font-size: 0.9em;}
 }

@@ -125,6 +125,107 @@ h1 > a {
   font-family: 'aganregular', Arial, serif;
 }
 
+.footer > a:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
 main h2 {
   text-align: center;
 }
@@ -137,7 +238,6 @@ main h2 {
 
 .carte {
   display: block;
-  height: 70em;
   max-width: 880px;
   margin: auto;
   padding: 5em;
@@ -150,13 +250,26 @@ main h2 {
   font-size: 3em;
 }
 
-.note > h4 {
-  text-transform: none;
-  text-align: center;
-  margin-bottom: 0px;
-  font-family: 'Itim';
-  font-style: italic;
-  font-size: 2em;
+h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h4 > img {
+  width: 30%;
+  height: 1em;
+}
+
+.separator-reverse {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .carte i {
@@ -171,13 +284,114 @@ table {
 }
 
 td {
-  padding-top: 0.7em;
+  padding-top: 0.9em;
+}
+
+/* ---------------------------------- Animations ----------------------------------- */
+.inter {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.inter:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0f0f0f;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.inter:hover:before {
+  width: 100%;
+  visibility: visible;
 }
 
 /* ---------------------------------- Menu Note ----------------------------------- */
 .note table {
   font-family: 'Itim';
   font-style: italic;
+}
+
+.note > h4 {
+  text-transform: none;
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: 'Itim';
+  font-style: italic;
+  font-size: 2em;
+}
+
+.endtitle {
+  text-align: center;
+  font-size: 2.4em;
+  font-family: 'Devonshire', cursive;
+  font-weight: 100;
+}
+
+/* ---------------------------------- Responsive ----------------------------------- */
+@media screen and (max-width: 1100px) {
+  .carte {
+    width: 50em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carte {
+    width: 32em;
+    padding: 4em;
+  }
+  table {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .cardtitle {
+    font-size: 2.3em;
+  }
+  .carte {
+    width: 20em;
+    padding: 2em;
+  }
+  .carte h2 {
+    font-size: 2.5em;
+  }
+  .note h4 {
+    font-size: 1.5em;
+  }
+  .endtitle {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .cardtitle h2 {
+    font-size: 2em;
+    margin-top: 1em;
+  }
+  .carte {
+    width: 17em;
+    padding: 1em;
+    margin-bottom: 7em;
+  }
+  .carte h2 {
+    font-size: 2em;
+  }
+  .note h4 {
+    font-size: 1.3em;
+  }
+  .endtitle {
+    font-size: 1.8em;
+  }
+  table {
+    font-size: 0.9em;
+  }
 }
 
 nav {
@@ -220,10 +434,10 @@ section {
 }
 
 .menu {
-  height: 40em;
+  height: 30em;
   width: 20em;
   margin: 3em;
-  margin-top: 7em;
+  margin-top: 5em;
   padding: 4em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,6 +598,53 @@ h3 > a:link {
   font-family: 'aganregular', Arial, serif;
 }
 
+.soon span {
+  color: #fdcb46;
+  font-size: 2em;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.soon span:nth-child(3) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.soon span:nth-child(4) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   section {
     -webkit-box-orient: vertical;
@@ -392,8 +653,8 @@ h3 > a:link {
             flex-direction: column;
   }
   .menu {
-    width: 12.5em;
-    height: 25em;
+    width: 30em;
+    height: 45em;
   }
 }
 
@@ -415,8 +676,8 @@ h3 > a:link {
             justify-content: center;
   }
   .menu {
-    width: 10em;
-    height: 20em;
+    width: 20em;
+    height: 30em;
   }
   .soon {
     width: 45%;
@@ -434,10 +695,10 @@ h3 > a:link {
     font-size: 1.5em;
   }
   .menu {
-    width: 9em;
+    width: 12em;
     height: 18em;
     margin: 0;
-    margin-top: 6em;
+    margin-top: 4em;
   }
   .soon {
     width: 45%;
@@ -463,8 +724,8 @@ h3 > a:link {
     font-size: 1.1em;
   }
   .menu {
-    width: 6em;
-    height: 12em;
+    width: 10em;
+    height: 15em;
     margin: 0;
     margin-top: 4em;
   }
