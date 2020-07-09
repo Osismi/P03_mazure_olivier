@@ -442,11 +442,17 @@ td {
   .carte h2 {
     font-size: 2em;
   }
+  .carte.chic h2 {
+    font-size: 2em;
+  }
   .carte.delice h2 {
     font-size: 2em;
   }
   .note h4 {
     font-size: 1.3em;
+  }
+  .chic h4 {
+    font-size: 1em;
   }
   .delice h4 {
     font-size: 1.3em;
