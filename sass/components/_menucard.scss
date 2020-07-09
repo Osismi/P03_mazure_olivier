@@ -64,6 +64,7 @@ td {
     background-color: rgb(15, 15, 15);
     visibility: hidden;
     transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 2px black;
   }
   .inter:hover:before { 
     width: 100%; 
@@ -93,6 +94,41 @@ td {
     font-weight: 100;
 }
 
+/* ---------------------------------- Menu Chic ----------------------------------- */
+
+.carte.chic > h2 {
+    font-size: 3em;
+    padding-bottom: 1em;
+}
+.chic > h4 {
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    padding-top: 1em;
+}
+.chic td {
+    font-family: 'PT Serif', serif;
+}
+/* ---------------------------------- Menu Delice ----------------------------------- */
+
+.separator-reverse {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.carte.delice > h2 {
+    font-size: 4.5em;
+}
+.delice h4 {
+    font-family: 'Nanum Pen';
+    font-size: 2em;
+    font-weight: 200;
+    text-align: center;
+}
+.delice td {
+    font-family: 'Nanum Pen';
+    font-size: 1.3em;
+}
 /* ---------------------------------- Responsive ----------------------------------- */
 @media screen and (max-width: 1100px)
 {
@@ -108,7 +144,10 @@ td {
     .cardtitle h2 {font-size: 1.3em;}
     .carte {width: 20em; padding: 2em;}
     .carte h2 {font-size: 2.5em;}
+    .carte.delice h2 {font-size: 2.5em;}
     .note h4 {font-size: 1.5em;}
+    .delice h4 {font-size: 1.5em;}
+    .delice td {font-size: 1.2em;}
     .endtitle {font-size: 2em;}
 }
 @media screen and (max-width: 410px)
@@ -116,7 +155,10 @@ td {
     .cardtitle h2 {margin-top: 1em;}
     .carte {width: 17em; padding: 1em; margin-bottom: 7em;}
     .carte h2 {font-size: 2em;}
+    .carte.delice h2 {font-size: 2em;}
     .note h4 {font-size: 1.3em;}
+    .delice h4 {font-size: 1.3em;}
+    .delice td {font-size: 1em;}
     .endtitle {font-size: 1.8em;}
     table {font-size: 0.9em;}
 }

@@ -22,7 +22,22 @@ a {
     color: inherit;
 }
 
+/* ---------------------------------- Animations ----------------------------------- */
 
+.menu > a {
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+.menu:hover {
+    opacity: 0.3;
+    transition: 0.25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
 /* ---------------------------------- Menu Note ----------------------------------- */
 
 .note {
@@ -80,7 +95,6 @@ h3 > a:link {
     -webkit-text-fill-color: transparent;
     font-family: 'Dancing Script';
     font-style: italic;
-    font-size: 2em;
     font-weight: 100;
     padding-left: 2px;
 }

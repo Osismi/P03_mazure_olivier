@@ -45,3 +45,15 @@
         opacity: .2;
     }
 }
+
+/* ---------------------------------- Responsive ----------------------------------- */
+
+@media screen and (max-width: 670px)
+{
+    .soon span {font-size: 1.3em;}
+}
+
+@media screen and (max-width: 410px)
+{
+    .soon span {font-size: 1em;}
+}

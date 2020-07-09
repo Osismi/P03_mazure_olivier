@@ -76,6 +76,15 @@ main {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'PT Serif';
+  src: url("font/PTSerif-Regular.eot");
+  src: url("font/PTSerif-Regular.eot?#iefix") format("embedded-opentype"), url("font/PTSerif-Regular.woff2") format("woff2"), url("font/PTSerif-Regular.woff") format("woff"), url("font/PTSerif-Regular.ttf") format("truetype"), url("font/PTSerif-Regular.svg#PTSerif-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 header {
   background-color: #59a695;
   width: 100%;
@@ -305,6 +314,8 @@ td {
   visibility: hidden;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0 0 2px black;
+          box-shadow: 0 0 2px black;
 }
 
 .inter:hover:before {
@@ -332,6 +343,46 @@ td {
   font-size: 2.4em;
   font-family: 'Devonshire', cursive;
   font-weight: 100;
+}
+
+/* ---------------------------------- Menu Chic ----------------------------------- */
+.carte.chic > h2 {
+  font-size: 3em;
+  padding-bottom: 1em;
+}
+
+.chic > h4 {
+  font-size: 1.5em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  padding-top: 1em;
+}
+
+.chic td {
+  font-family: 'PT Serif', serif;
+}
+
+/* ---------------------------------- Menu Delice ----------------------------------- */
+.separator-reverse {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.carte.delice > h2 {
+  font-size: 4.5em;
+}
+
+.delice h4 {
+  font-family: 'Nanum Pen';
+  font-size: 2em;
+  font-weight: 200;
+  text-align: center;
+}
+
+.delice td {
+  font-family: 'Nanum Pen';
+  font-size: 1.3em;
 }
 
 /* ---------------------------------- Responsive ----------------------------------- */
@@ -362,8 +413,17 @@ td {
   .carte h2 {
     font-size: 2.5em;
   }
+  .carte.delice h2 {
+    font-size: 2.5em;
+  }
   .note h4 {
     font-size: 1.5em;
+  }
+  .delice h4 {
+    font-size: 1.5em;
+  }
+  .delice td {
+    font-size: 1.2em;
   }
   .endtitle {
     font-size: 2em;
@@ -382,8 +442,17 @@ td {
   .carte h2 {
     font-size: 2em;
   }
+  .carte.delice h2 {
+    font-size: 2em;
+  }
   .note h4 {
     font-size: 1.3em;
+  }
+  .delice h4 {
+    font-size: 1.3em;
+  }
+  .delice td {
+    font-size: 1em;
   }
   .endtitle {
     font-size: 1.8em;
@@ -468,6 +537,31 @@ a {
   color: inherit;
 }
 
+/* ---------------------------------- Animations ----------------------------------- */
+.menu > a {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+.menu > a:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.menu:hover {
+  opacity: 0.3;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
 /* ---------------------------------- Menu Note ----------------------------------- */
 .note {
   background-color: #fadedb;
@@ -536,7 +630,6 @@ h3 > a:link {
   -webkit-text-fill-color: transparent;
   font-family: 'Dancing Script';
   font-style: italic;
-  font-size: 2em;
   font-weight: 100;
   padding-left: 2px;
 }
@@ -641,6 +734,19 @@ h3 > a:link {
   }
   100% {
     opacity: .2;
+  }
+}
+
+/* ---------------------------------- Responsive ----------------------------------- */
+@media screen and (max-width: 670px) {
+  .soon span {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .soon span {
+    font-size: 1em;
   }
 }
 
