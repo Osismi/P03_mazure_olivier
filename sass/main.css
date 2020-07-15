@@ -323,9 +323,14 @@ h4 > img {
   height: 1em;
 }
 
+.separator {
+  padding-right: 5px;
+}
+
 .separator-reverse {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+  padding-right: 5px;
 }
 
 .carte i {
@@ -400,6 +405,7 @@ td:last-child {
 }
 
 .carte.chic > table {
+  font-family: 'PT Serif', serif;
   font-style: normal;
 }
 
@@ -438,6 +444,16 @@ td:last-child {
   font-family: cursive;
 }
 
+/* ---------------------------------- Menu Palette ----------------------------------- */
+.palette > h4 {
+  font-weight: 100;
+  font-style: normal;
+}
+
+.carte.palette > table {
+  font-style: normal;
+}
+
 /* ---------------------------------- Responsive ----------------------------------- */
 @media screen and (max-width: 1100px) {
   .carte {
@@ -472,10 +488,13 @@ td:last-child {
   .note h4 {
     font-size: 1.5em;
   }
-  .delice h4 {
-    font-size: 1.5em;
+  .chic h4 {
+    font-size: 1.2em;
   }
-  .delice td {
+  .delice h4 {
+    font-size: 1.3em;
+  }
+  .palette h4 {
     font-size: 1.2em;
   }
   .endtitle {
@@ -501,16 +520,7 @@ td:last-child {
   .carte.delice h2 {
     font-size: 2em;
   }
-  .note h4 {
-    font-size: 1.3em;
-  }
-  .chic h4 {
-    font-size: 1em;
-  }
-  .delice h4 {
-    font-size: 1.3em;
-  }
-  .delice td {
+  .carte h4 {
     font-size: 1em;
   }
   .endtitle {
