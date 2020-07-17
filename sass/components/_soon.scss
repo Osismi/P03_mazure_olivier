@@ -1,6 +1,12 @@
+.sooncontent {
+    display: flex;
+    align-items: center;
+}
+
+
 .soon {
     background-color: $color-prim;
-    width: 35%;
+    padding: 0.5em 1em 0.5em 1em;
     display: flex;
     align-items: center;
     justify-content: center;

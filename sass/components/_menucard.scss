@@ -1,3 +1,10 @@
+.basecarte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 main h2 {
     text-align: center;
 }
@@ -9,8 +16,7 @@ main h2 {
 }
 .carte {
     display: block;
-    max-width: 880px;
-    margin: auto;
+    margin: 1.5em;
     padding: 5em;
     margin-bottom: 10em;
     @include shadow;
@@ -139,6 +145,9 @@ td:last-child {
     font-style: normal;
     font-family: cursive;
 }
+.prix {
+    text-align: right;
+}
 
 /* ---------------------------------- Menu Palette ----------------------------------- */
 
@@ -153,19 +162,15 @@ td:last-child {
 }
 
 /* ---------------------------------- Responsive ----------------------------------- */
-@media screen and (max-width: 1100px)
-{
-    .carte {width: 50em;}
-}
+
 @media screen and (max-width: 768px)
 {
-    .carte {width: 32em; padding: 4em;}
     table {font-size: 1.1em;}
 }
 @media screen and (max-width: 670px)
 {
     .cardtitle h2 {font-size: 1.3em;}
-    .carte {width: 20em; padding: 2em;}
+    .carte {padding: 1em;}
     .carte h2 {font-size: 2.5em;}
     .carte.delice h2 {font-size: 2.5em;}
     .note h4 {font-size: 1.5em;}
@@ -177,7 +182,6 @@ td:last-child {
 @media screen and (max-width: 410px)
 {
     .cardtitle h2 {margin-top: 1em;}
-    .carte {width: 17em; padding: 1em; margin-bottom: 7em;}
     .carte h2 {font-size: 2em;}
     .carte.chic h2 {font-size: 2em;}
     .carte.delice h2 {font-size: 2em;}
