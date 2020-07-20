@@ -377,8 +377,8 @@ td:last-child {
   content: "";
   position: absolute;
   width: 0;
-  height: 0.5px;
-  bottom: 0;
+  height: 2px;
+  bottom: -5px;
   left: 0;
   background-color: #0f0f0f;
   visibility: hidden;
@@ -432,12 +432,24 @@ td:last-child {
   color: #c67412;
 }
 
+.inter.chicfrt:before {
+  background-color: #c67412;
+}
+
 .chicsnd {
   color: #a56799;
 }
 
+.inter.chicsnd:before {
+  background-color: #a56799;
+}
+
 .chicthd {
   color: #6e4ccc;
+}
+
+.inter.chicthd:before {
+  background-color: #6e4ccc;
 }
 
 /* ---------------------------------- Menu Delice ----------------------------------- */

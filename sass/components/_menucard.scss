@@ -77,14 +77,15 @@ td:last-child {
     content: "";
     position: absolute;
     width: 0;
-    height: 0.5px;
-    bottom: 0;
+    height: 2px;
+    bottom: -5px;
     left: 0;
     background-color: rgb(15, 15, 15);
     visibility: hidden;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 2px black;
   }
+
   .inter:hover:before { 
     width: 100%; 
     visibility: visible;
@@ -125,11 +126,20 @@ td:last-child {
 .chicfrt {
     color: rgb(198, 116, 18);
 }
+.inter.chicfrt:before {
+    background-color: rgb(198, 116, 18);
+}
 .chicsnd {
     color: rgb(165, 103, 153);
 }
+.inter.chicsnd:before {
+    background-color: rgb(165, 103, 153);
+}
 .chicthd {
     color: rgb(110, 76, 204);
+}
+.inter.chicthd:before {
+    background-color: rgb(110, 76, 204);
 }
 /* ---------------------------------- Menu Delice ----------------------------------- */
 
