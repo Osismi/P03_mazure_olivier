@@ -11,7 +11,8 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    height: 70px;
+    height: auto;
+    padding: 1em;
     border-radius: 15px;
     margin-top: 3em;
     margin-bottom: 8em;
@@ -54,21 +55,16 @@
 
 /* ---------------------------------- Responsive ----------------------------------- */
 
-@media screen and (max-width: 768px)
-{
-    .soon {width: 45%;}
-}
-
 @media screen and (max-width: 670px)
 {
     .soon span {font-size: 1.3em;}
-    .soon {width: 45%; height: 3em; margin-bottom: 6em;}
+    .soon {margin-bottom: 6em;}
     .soon > a {font-size: 1.1em;}
 }
 
 @media screen and (max-width: 410px)
 {
     .soon span {font-size: 1em;}
-    .soon {width: 45%; height: 3em; margin-bottom: 5em;}
+    .soon {margin-bottom: 5em;}
     .soon > a {font-size: 0.9em;}
 }

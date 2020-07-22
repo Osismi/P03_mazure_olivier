@@ -1,0 +1,28 @@
+.separator-reverse {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.carte.delice > h2 {
+    font-size: 4.5em;
+}
+.delice h4 {
+    font-weight: 200;
+    font-style: normal;
+    font-family: cursive;
+}
+.prix {
+    text-align: right;
+}
+
+/* ---------------------------------- Responsive ----------------------------------- */
+
+@media screen and (max-width: 670px)
+{
+    .carte.delice h2 {font-size: 2.5em;}
+    .delice h4 {font-size: 1.3em;}
+}
+
+@media screen and (max-width: 410px)
+{   
+    .carte.delice h2 {font-size: 2em;}
+}

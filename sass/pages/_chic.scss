@@ -1,0 +1,47 @@
+.carte.chic > h2 {
+    padding-bottom: 1em;
+}
+.carte.chic > table {
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+}
+.chic > h4 {
+    letter-spacing: 0.1px;
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    padding-top: 1em;
+}
+.chicfrt {
+    color: rgb(198, 116, 18);
+}
+.inter.chicfrt:before {
+    background-color: rgb(198, 116, 18);
+    box-shadow: 0 0 2px rgb(198, 116, 18);
+}
+.chicsnd {
+    color: rgb(165, 103, 153);
+}
+.inter.chicsnd:before {
+    background-color: rgb(165, 103, 153);
+    box-shadow: 0 0 2px rgb(165, 103, 153);
+}
+.chicthd {
+    color: rgb(110, 76, 204);
+}
+.inter.chicthd:before {
+    background-color: rgb(110, 76, 204);
+    box-shadow: 0 0 2px rgb(110, 76, 204)
+}
+
+
+/* ---------------------------------- Responsive ----------------------------------- */
+
+@media screen and (max-width: 670px)
+{
+    .chic h4 {font-size: 1.2em;}
+}
+
+@media screen and (max-width: 410px)
+{
+    .carte.chic h2 {font-size: 2em;}
+}

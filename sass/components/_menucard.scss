@@ -67,6 +67,7 @@ td {
 td:last-child {
     padding-left: 3px;
 }
+
 /* ---------------------------------- Animations ----------------------------------- */
 .inter {
     text-decoration: none;
@@ -91,85 +92,6 @@ td:last-child {
     visibility: visible;
   }
 
-/* ---------------------------------- Menu Note ----------------------------------- */
-
-.note > h4 {
-    text-transform: none;
-    margin-bottom: 0px; 
-    font-size: 2em;
-}
-
-.endtitle {
-    text-align: center;
-    font-size: 2.4em;
-    font-family: 'Devonshire', cursive;
-    font-weight: 100;
-    margin-block-start: 0.5em;
-    margin-block-end: 0em;
-}
-
-/* ---------------------------------- Menu Chic ----------------------------------- */
-
-.carte.chic > h2 {
-    padding-bottom: 1em;
-}
-.carte.chic > table {
-    font-family: 'PT Serif', serif;
-    font-style: normal;
-}
-.chic > h4 {
-    letter-spacing: 0.1px;
-    font-family: 'PT Serif', serif;
-    font-style: normal;
-    padding-top: 1em;
-}
-.chicfrt {
-    color: rgb(198, 116, 18);
-}
-.inter.chicfrt:before {
-    background-color: rgb(198, 116, 18);
-}
-.chicsnd {
-    color: rgb(165, 103, 153);
-}
-.inter.chicsnd:before {
-    background-color: rgb(165, 103, 153);
-}
-.chicthd {
-    color: rgb(110, 76, 204);
-}
-.inter.chicthd:before {
-    background-color: rgb(110, 76, 204);
-}
-/* ---------------------------------- Menu Delice ----------------------------------- */
-
-.separator-reverse {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
-.carte.delice > h2 {
-    font-size: 4.5em;
-}
-.delice h4 {
-    font-weight: 200;
-    font-style: normal;
-    font-family: cursive;
-}
-.prix {
-    text-align: right;
-}
-
-/* ---------------------------------- Menu Palette ----------------------------------- */
-
-.palette > h4
-{
-    font-weight: 100;
-    font-style: normal;
-}
-.carte.palette > table
-{
-    font-style: normal;
-}
 
 /* ---------------------------------- Responsive ----------------------------------- */
 
@@ -182,19 +104,12 @@ td:last-child {
     .cardtitle h2 {font-size: 1.3em;}
     .carte {padding: 1em;}
     .carte h2 {font-size: 2.5em;}
-    .carte.delice h2 {font-size: 2.5em;}
-    .note h4 {font-size: 1.5em;}
-    .chic h4 {font-size: 1.2em;}
-    .delice h4 {font-size: 1.3em;}
-    .palette h4 {font-size: 1.2em;}
     .endtitle {font-size: 2em;}
 }
 @media screen and (max-width: 410px)
 {
     .cardtitle h2 {margin-top: 1em;}
     .carte h2 {font-size: 2em;}
-    .carte.chic h2 {font-size: 2em;}
-    .carte.delice h2 {font-size: 2em;}
     .carte h4 {font-size: 1em;}
     .endtitle {font-size: 1.8em;}
     table {font-size: 0.9em;}

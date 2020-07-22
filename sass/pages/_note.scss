@@ -1,0 +1,21 @@
+.note > h4 {
+    text-transform: none;
+    margin-bottom: 0px; 
+    font-size: 2em;
+}
+
+.endtitle {
+    text-align: center;
+    font-size: 2.4em;
+    font-family: 'Devonshire', cursive;
+    font-weight: 100;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+}
+
+/* ---------------------------------- Responsive ----------------------------------- */
+
+@media screen and (max-width: 670px)
+{
+    .note h4 {font-size: 1.5em;}
+}

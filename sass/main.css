@@ -393,95 +393,6 @@ td:last-child {
   visibility: visible;
 }
 
-/* ---------------------------------- Menu Note ----------------------------------- */
-.note > h4 {
-  text-transform: none;
-  margin-bottom: 0px;
-  font-size: 2em;
-}
-
-.endtitle {
-  text-align: center;
-  font-size: 2.4em;
-  font-family: 'Devonshire', cursive;
-  font-weight: 100;
-  -webkit-margin-before: 0.5em;
-          margin-block-start: 0.5em;
-  -webkit-margin-after: 0em;
-          margin-block-end: 0em;
-}
-
-/* ---------------------------------- Menu Chic ----------------------------------- */
-.carte.chic > h2 {
-  padding-bottom: 1em;
-}
-
-.carte.chic > table {
-  font-family: 'PT Serif', serif;
-  font-style: normal;
-}
-
-.chic > h4 {
-  letter-spacing: 0.1px;
-  font-family: 'PT Serif', serif;
-  font-style: normal;
-  padding-top: 1em;
-}
-
-.chicfrt {
-  color: #c67412;
-}
-
-.inter.chicfrt:before {
-  background-color: #c67412;
-}
-
-.chicsnd {
-  color: #a56799;
-}
-
-.inter.chicsnd:before {
-  background-color: #a56799;
-}
-
-.chicthd {
-  color: #6e4ccc;
-}
-
-.inter.chicthd:before {
-  background-color: #6e4ccc;
-}
-
-/* ---------------------------------- Menu Delice ----------------------------------- */
-.separator-reverse {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
-.carte.delice > h2 {
-  font-size: 4.5em;
-}
-
-.delice h4 {
-  font-weight: 200;
-  font-style: normal;
-  font-family: cursive;
-}
-
-.prix {
-  text-align: right;
-}
-
-/* ---------------------------------- Menu Palette ----------------------------------- */
-.palette > h4 {
-  font-weight: 100;
-  font-style: normal;
-}
-
-.carte.palette > table {
-  font-style: normal;
-}
-
 /* ---------------------------------- Responsive ----------------------------------- */
 @media screen and (max-width: 768px) {
   table {
@@ -499,21 +410,6 @@ td:last-child {
   .carte h2 {
     font-size: 2.5em;
   }
-  .carte.delice h2 {
-    font-size: 2.5em;
-  }
-  .note h4 {
-    font-size: 1.5em;
-  }
-  .chic h4 {
-    font-size: 1.2em;
-  }
-  .delice h4 {
-    font-size: 1.3em;
-  }
-  .palette h4 {
-    font-size: 1.2em;
-  }
   .endtitle {
     font-size: 2em;
   }
@@ -524,12 +420,6 @@ td:last-child {
     margin-top: 1em;
   }
   .carte h2 {
-    font-size: 2em;
-  }
-  .carte.chic h2 {
-    font-size: 2em;
-  }
-  .carte.delice h2 {
     font-size: 2em;
   }
   .carte h4 {
@@ -604,7 +494,8 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  height: 70px;
+  height: auto;
+  padding: 1em;
   border-radius: 15px;
   margin-top: 3em;
   margin-bottom: 8em;
@@ -665,19 +556,11 @@ section {
 }
 
 /* ---------------------------------- Responsive ----------------------------------- */
-@media screen and (max-width: 768px) {
-  .soon {
-    width: 45%;
-  }
-}
-
 @media screen and (max-width: 670px) {
   .soon span {
     font-size: 1.3em;
   }
   .soon {
-    width: 45%;
-    height: 3em;
     margin-bottom: 6em;
   }
   .soon > a {
@@ -690,8 +573,6 @@ section {
     font-size: 1em;
   }
   .soon {
-    width: 45%;
-    height: 3em;
     margin-bottom: 5em;
   }
   .soon > a {
@@ -908,6 +789,140 @@ h3 > a:link {
     height: 15em;
     margin: 0;
     margin-top: 4em;
+  }
+}
+
+.note > h4 {
+  text-transform: none;
+  margin-bottom: 0px;
+  font-size: 2em;
+}
+
+.endtitle {
+  text-align: center;
+  font-size: 2.4em;
+  font-family: 'Devonshire', cursive;
+  font-weight: 100;
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+}
+
+/* ---------------------------------- Responsive ----------------------------------- */
+@media screen and (max-width: 670px) {
+  .note h4 {
+    font-size: 1.5em;
+  }
+}
+
+.carte.chic > h2 {
+  padding-bottom: 1em;
+}
+
+.carte.chic > table {
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+}
+
+.chic > h4 {
+  letter-spacing: 0.1px;
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  padding-top: 1em;
+}
+
+.chicfrt {
+  color: #c67412;
+}
+
+.inter.chicfrt:before {
+  background-color: #c67412;
+  -webkit-box-shadow: 0 0 2px #c67412;
+          box-shadow: 0 0 2px #c67412;
+}
+
+.chicsnd {
+  color: #a56799;
+}
+
+.inter.chicsnd:before {
+  background-color: #a56799;
+  -webkit-box-shadow: 0 0 2px #a56799;
+          box-shadow: 0 0 2px #a56799;
+}
+
+.chicthd {
+  color: #6e4ccc;
+}
+
+.inter.chicthd:before {
+  background-color: #6e4ccc;
+  -webkit-box-shadow: 0 0 2px #6e4ccc;
+          box-shadow: 0 0 2px #6e4ccc;
+}
+
+/* ---------------------------------- Responsive ----------------------------------- */
+@media screen and (max-width: 670px) {
+  .chic h4 {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .carte.chic h2 {
+    font-size: 2em;
+  }
+}
+
+.separator-reverse {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.carte.delice > h2 {
+  font-size: 4.5em;
+}
+
+.delice h4 {
+  font-weight: 200;
+  font-style: normal;
+  font-family: cursive;
+}
+
+.prix {
+  text-align: right;
+}
+
+/* ---------------------------------- Responsive ----------------------------------- */
+@media screen and (max-width: 670px) {
+  .carte.delice h2 {
+    font-size: 2.5em;
+  }
+  .delice h4 {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .carte.delice h2 {
+    font-size: 2em;
+  }
+}
+
+.palette > h4 {
+  font-weight: 100;
+  font-style: normal;
+}
+
+.carte.palette > table {
+  font-style: normal;
+}
+
+/* ---------------------------------- Responsive ----------------------------------- */
+@media screen and (max-width: 670px) {
+  .palette h4 {
+    font-size: 1.2em;
   }
 }
 /*# sourceMappingURL=main.css.map */

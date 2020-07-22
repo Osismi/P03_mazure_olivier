@@ -1,0 +1,16 @@
+.palette > h4
+{
+    font-weight: 100;
+    font-style: normal;
+}
+.carte.palette > table
+{
+    font-style: normal;
+}
+
+/* ---------------------------------- Responsive ----------------------------------- */
+
+@media screen and (max-width: 670px)
+{
+    .palette h4 {font-size: 1.2em;}
+}
