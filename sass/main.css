@@ -433,6 +433,16 @@ td:last-child {
   }
 }
 
+@media screen and (max-width: 300px) {
+  .carte {
+    margin: 1em;
+    margin-bottom: 5em;
+  }
+  table {
+    font-size: 0.8em;
+  }
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -829,6 +839,12 @@ h3 > a:link {
   }
 }
 
+@media screen and (max-width: 300px) {
+  .note h4 {
+    font-size: 1em;
+  }
+}
+
 .carte.chic > h2 {
   padding-bottom: 1em;
 }
@@ -888,6 +904,12 @@ h3 > a:link {
   }
 }
 
+@media screen and (max-width: 300px) {
+  .chic h4 {
+    font-size: 0.8em;
+  }
+}
+
 .separator-reverse {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -920,6 +942,12 @@ h3 > a:link {
 @media screen and (max-width: 410px) {
   .carte.delice h2 {
     font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .delice > h4 {
+    font-size: 1em;
   }
 }
 

@@ -114,3 +114,8 @@ td:last-child {
     .endtitle {font-size: 1.8em;}
     table {font-size: 0.9em;}
 }
+@media screen and (max-width: 300px)
+{
+    .carte {margin: 1em; margin-bottom: 5em;}
+    table {font-size: 0.8em;}
+}

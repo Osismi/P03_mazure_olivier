@@ -26,3 +26,7 @@
 {   
     .carte.delice h2 {font-size: 2em;}
 }
+@media screen and (max-width: 300px)
+{
+    .delice > h4 {font-size: 1em;}
+}
