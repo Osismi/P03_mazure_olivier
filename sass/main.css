@@ -792,6 +792,19 @@ h3 > a:link {
   }
 }
 
+@media screen and (max-width: 300px) {
+  .menu {
+    width: 8em;
+    height: 13em;
+  }
+  .menu h2 {
+    font-size: 1.5em;
+  }
+  .menu h3 {
+    font-size: 2em;
+  }
+}
+
 .note > h4 {
   text-transform: none;
   margin-bottom: 0px;
